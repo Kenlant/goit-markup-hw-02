@@ -1,0 +1,249 @@
+:root {
+    /* fonts */
+    --main-font: "Roboto";
+    --secondary-font: "Raleway";
+
+    /* colors */
+    --black-v1: #212121;
+    --black-v2: #2F303A;
+    --grey: #757575;
+    --light-grey-v1: #EEEEEE;
+    --light-grey-v2: #ECECEC;
+    --light-grey-v3: #F5F4FA;
+    --blue: #2196F3;
+    
+    /* others */
+}
+
+body {
+    background-color: white;
+
+    font-family: var(--main-font), "sans-serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--grey);
+}
+
+/* common styles start */
+
+.link {
+    text-decoration: none;
+}
+
+.link:focus,
+.link:hover {
+    color: var(--blue);
+}
+
+.list {
+    list-style: none;
+}
+
+.button {
+    cursor: pointer;
+}
+
+/* common styles end */
+
+
+/* header styles start */
+
+.header-logo-link,
+.footer-logo-link
+{
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--blue)
+}
+
+.header-logo-studio {
+    color: black;
+}
+
+.header-nav-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--black-v1);
+}
+
+.header-contacts-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--grey);
+}
+
+/* header styles end */
+
+
+
+/* footer styles start */
+
+.footer {
+    background-color: var(--black-v2);
+}
+
+.footer-logo-studio {
+    color: white;
+}
+
+.footer-contacts-link {
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts-item.contact-address {
+    color: white;
+}
+
+/* footer styles end */
+
+
+/* welcome section styles start */
+.welcome {
+    background-color: var(--black-v2);
+}
+
+.welcome-header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.welcome-service-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: white;
+
+    background-color: var(--blue);
+}
+
+/* welcome section styles end */
+
+
+/* features section styles start */
+.features-header {
+    display: none;
+}
+
+.feature-card-header {
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black-v1);
+}
+
+.feature-card-text {
+    letter-spacing: 0.03em;
+}
+
+/* features section styles end */
+
+/* work section styles start */
+.work-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black-v1);   
+}
+
+/* work section styles end */
+
+/* team section styles start */
+.team {
+    background-color: var(--light-grey-v3);
+}
+
+.team-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black-v1);   
+}
+
+.team-card {
+    background-color: white;
+}
+
+.team-card-header {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black-v1);
+}
+
+.team-card-text {
+    font-size: 16px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* team section styles end */
+
+
+/* product filter section styles start */
+.product-filter-header {
+    display: none;
+}
+
+.product-filter-button {
+    background-color: var(--light-grey-v3);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.product-filter-button:focus,
+.product-filter-button:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+/* product filter section styles end */
+
+
+/* products section styles start */
+
+.products-header {
+    display: none;
+}
+
+.product-note-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--black-v1);
+}
+
+.product-note-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+/* products section styles end */
