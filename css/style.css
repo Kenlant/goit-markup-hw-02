@@ -4,26 +4,41 @@
     --secondary-font: "Raleway";
 
     /* colors */
-    --black-v1: #212121;
-    --black-v2: #2F303A;
-    --grey: #757575;
-    --light-grey-v1: #EEEEEE;
-    --light-grey-v2: #ECECEC;
-    --light-grey-v3: #F5F4FA;
-    --blue: #2196F3;
+    --text-logo-common: #2196F3;
+    --text-logo-studio-header: #000000;
+    --text-logo-studio-footer: #FFFFFF;
+    --text-nav-link: #212121;
+    --text-nav-link-address: #757575;
+    --text-footer-link-address: rgba(255, 255, 255, 0.6);
+    --text-nav-address: #FFFFFF;
+    --text-link-active: #2196F3;
+    --text-header-main: #212121;
+    --text-header-secondary: #FFFFFF;
+    --text-main: #757575;
+    --text-secondary: #FFFFFF;
+    --text-btn-v1: #FFFFFF;
+    --text-btn-v2: #212121;
+    --text-btn-v2-active: #FFFFFF;
     
-    /* others */
+    /*background-colors  */
+    --bg-main: #FFFFFF;
+    --bg-secondary: #2F303A;
+    --bg-team-section: #F5F4FA;
+    --bg-btn-v1: #2196F3;
+    --bg-btn-v1-active: #188CE8;
+    --bg-btn-v2: #F5F4FA;
+    --bg-btn-v2-active: #2196F3;
 }
 
 body {
-    background-color: white;
+    background-color: var(--bg-main);
 
     font-family: var(--main-font), "sans-serif";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    color: var(--grey);
+    color: var(--text-main);
 }
 
 /* common styles start */
@@ -33,8 +48,9 @@ body {
 }
 
 .link:focus,
-.link:hover {
-    color: var(--blue);
+.link:hover,
+.link.current {
+    color: var(--text-link-active);
 }
 
 .list {
@@ -43,6 +59,8 @@ body {
 
 .button {
     cursor: pointer;
+    border: none;
+    font-family: inherit;
 }
 
 /* common styles end */
@@ -58,48 +76,49 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color:var(--blue)
+    color: var(--text-logo-common)
 }
 
 .header-logo-studio {
-    color: black;
+    color: var(--text-logo-studio-header);
 }
 
 .header-nav-link {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--black-v1);
+    color: var(--text-nav-link);
 }
 
 .header-contacts-link {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--grey);
+    color: var(--text-nav-link-address);
 }
 
 /* header styles end */
 
 
-
 /* footer styles start */
 
 .footer {
-    background-color: var(--black-v2);
+    background-color: var(--bg-secondary);
 }
 
 .footer-logo-studio {
-    color: white;
+    color: var(--text-logo-studio-footer);
 }
 
 .footer-contacts-link {
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    color: var(--text-footer-link-address);
 }
 
 .footer-contacts-item.contact-address {
-    color: white;
+    color: var(--text-nav-address);
+    font-style: normal;
 }
 
 /* footer styles end */
@@ -107,7 +126,7 @@ body {
 
 /* welcome section styles start */
 .welcome {
-    background-color: var(--black-v2);
+    background-color: var(--bg-secondary);
 }
 
 .welcome-header {
@@ -115,9 +134,10 @@ body {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-
     text-align: center;
     text-transform: uppercase;
+
+    color: var(--text-header-secondary);
 }
 
 .welcome-service-button {
@@ -126,9 +146,13 @@ body {
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
-    color: white;
+    color: var(--text-btn-v1);
 
-    background-color: var(--blue);
+    background-color: var(--bg-btn-v1);
+}
+
+.welcome-service-button:hover {
+    background-color: var(--bg-btn-v1-active);
 }
 
 /* welcome section styles end */
@@ -142,9 +166,10 @@ body {
 .feature-card-header {
     font-weight: 700;
     line-height: 1.14;
+    font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--black-v1);
+    color: var(--text-header-main);
 }
 
 .feature-card-text {
@@ -160,14 +185,14 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--black-v1);   
+    color: var(--text-header-main);   
 }
 
 /* work section styles end */
 
 /* team section styles start */
 .team {
-    background-color: var(--light-grey-v3);
+    background-color: var(--bg-team-section);
 }
 
 .team-header {
@@ -176,11 +201,11 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--black-v1);   
+    color: var(--text-header-main);   
 }
 
 .team-card {
-    background-color: white;
+    background-color: var(--bg-main);
 }
 
 .team-card-header {
@@ -189,7 +214,7 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--black-v1);
+    color: var(--text-header-main);
 }
 
 .team-card-text {
@@ -201,43 +226,40 @@ body {
 
 /* team section styles end */
 
+/* products section styles start */
+.products-header {
+    display: none;
+}
 
-/* product filter section styles start */
 .product-filter-header {
     display: none;
 }
 
 .product-filter-button {
-    background-color: var(--light-grey-v3);
+    background-color: var(--bg-btn-v2);
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    color: var(--text-btn-v2);
 }
 
 .product-filter-button:focus,
-.product-filter-button:hover {
-    background-color: var(--blue);
-    color: white;
+.product-filter-button:hover,
+.product-filter-button.current {
+    background-color: var(--bg-btn-v2-active);
+    color: var(--text-btn-v2-active);
 }
 
-/* product filter section styles end */
-
-
-/* products section styles start */
-
-.products-header {
-    display: none;
-}
 
 .product-note-header {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--black-v1);
+    color: var(--text-header-main);
 }
 
 .product-note-text {
